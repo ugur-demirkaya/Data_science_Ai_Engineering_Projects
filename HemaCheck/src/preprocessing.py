@@ -62,10 +62,12 @@ def prepare_features(df, target_col='anomaly_label'):
             if col in df.columns:
                 available_cols.append(col)
     
-    # Encode categoricals
+    # Encode categoricals - EXCLUDE leakage features
     le_dict = {}
-    categorical_cols = ['cell_type', 'disease_category', 'patient_age_group', 
-                       'patient_sex', 'dataset_source', 'staining_protocol']
+    # cell_type and disease_category are EXCLUDED - they directly indicate anomaly
+    # Only use demographic/metadata features that don't leak target info
+    categorical_cols = ['patient_age_group', 'patient_sex', 'dataset_source', 
+                       'staining_protocol']
     
     for col in categorical_cols:
         if col in df.columns:
