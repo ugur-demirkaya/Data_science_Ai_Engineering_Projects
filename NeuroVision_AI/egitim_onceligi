@@ -1,0 +1,8 @@
+İzleyeceğimiz Sıra (Yol Haritası):
+
+src/data_loader.py 📍 (Şu an buradayız) - MRI verilerini okuyup modele uygun hale getirme (boyutlandırma, bölme).
+src/model.py - Yapay zeka modelimizin (EfficientNet) mimarisini kurma.
+src/train.py - Modeli bu verilerle eğiteceğimiz kod.
+src/gradcam.py - Tümörü resim üzerinde kırmızı renkle (ısı haritası) işaretleyen bölüm.
+src/llm_advisor.py - Groq & Gemini ile doktora yardımcı tedavi metni üreten bölüm.
+app.py - Streamlit kullanarak bunu bir web sitesine dönüştürme.

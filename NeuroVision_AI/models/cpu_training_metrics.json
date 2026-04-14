@@ -1,0 +1,26 @@
+{
+  "device": "CPU",
+  "phase1_time": 31.07,
+  "phase2_time": 20.01,
+  "total_time": 51.08,
+  "test": {
+    "accuracy": 0.8421052631578947,
+    "precision_saglikli": 0.8,
+    "recall_saglikli": 0.8,
+    "f1_saglikli": 0.8,
+    "precision_tumor": 0.8695652173913043,
+    "recall_tumor": 0.8695652173913043,
+    "f1_tumor": 0.8695652173913043,
+    "auc_roc": 0.9217391304347826,
+    "confusion_matrix": [
+      [
+        12,
+        3
+      ],
+      [
+        3,
+        20
+      ]
+    ]
+  }
+}
